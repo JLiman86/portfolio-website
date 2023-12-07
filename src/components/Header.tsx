@@ -5,7 +5,7 @@ import SocialNav from "./SocialNav";
 
 const Header = () => {
   return (
-    <header className="bg-primary fixed w-full">
+    <header className="bg-primary fixed w-full z-10">
       <div className="container mx-auto py-5 flex justify-between items-center">
         <img src={Logo} alt="" />
 
