@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Logo from '../assets/img/outline-text/portfolio.svg'
 
 import { projectsNav } from "../data";
 import { projectsData } from "../data";
@@ -24,8 +25,18 @@ const Portfolio = () => {
   }, [category]);
 
   return (
-    <section className="bg-primary">
-      <div className="container mx-auto py-10">
+    <section id="portfolio" className="bg-primary">
+      <div className="container mx-auto pt-20 pb-10">
+        <div className="max-w-[500px] mx-auto text-center relative">
+          <h2 className="font-secondary text-3xl font-semibold pt-8">My latest work</h2>
+          <p className="text-paragraph text-sm my-8">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+            consequuntur amet, quos voluptatum animi culpa! Ea libero
+            exercitationem cupiditate nulla!
+          </p>
+          <img className="absolute top-0 left-0 w-full" src={Logo} alt="" />
+        </div>
+
         <ul className="flex flex-col md:flex-row justify-center items-center gap-3">
           {projectsNav.map((project, idx) => {
             return (
@@ -43,10 +54,8 @@ const Portfolio = () => {
         </ul>
 
         <ul className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-7 text-center">
-          {portfolios.map((project,idx) => {
-            return (
-              <PortfolioItem key={idx} project={project}/>
-            );
+          {portfolios.map((project, idx) => {
+            return <PortfolioItem key={idx} project={project} />;
           })}
         </ul>
       </div>

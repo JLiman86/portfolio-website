@@ -8,8 +8,6 @@ import {
   FiSettings,
   FiPenTool,
   FiTag,
-  FiMail,
-  FiMapPin,
 } from "react-icons/fi";
 
 // companies icons
@@ -201,25 +199,25 @@ export const skills = [
 // services
 export const services = [
   {
-    icon: <FiLayout />,
+    icon: <FiLayout size={26} />,
     name: "Web Design",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
   },
   {
-    icon: <FiSettings />,
+    icon: <FiSettings size={26} />,
     name: "Web Development",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
   },
   {
-    icon: <FiPenTool />,
+    icon: <FiPenTool size={26} />,
     name: "Branding",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
   },
   {
-    icon: <FiTag />,
+    icon: <FiTag size={26} />,
     name: "SEO",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
@@ -251,18 +249,3 @@ export const testimonials = [
   },
 ];
 
-// contact
-export const contact = [
-  {
-    icon: <FiMail />,
-    title: "Have a question?",
-    subtitle: "I am here to help you.",
-    description: "Email me at hello@youremail.com",
-  },
-  {
-    icon: <FiMapPin />,
-    title: "Current Location",
-    subtitle: "Bucharest, Romania",
-    description: "Serving clients worldwide",
-  },
-];

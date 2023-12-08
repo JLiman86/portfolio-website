@@ -3,7 +3,7 @@ import Banner from "../assets/img/outline-text/about.svg"
 
 const About = () => {
   return (
-    <section className="bg-secondary overflow-hidden">
+    <section id="about" className="bg-secondary overflow-hidden">
       <div className="container mx-auto py-10 grid grid-cols-1 md:grid-cols-2">
         <div>
           <div className="rounded-2xl overflow-hidden flex items-center justify-center">

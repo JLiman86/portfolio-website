@@ -8,7 +8,17 @@ const NavBar = () => {
         {navigation.map((item, idx) => {
           return (
             <li className="text-center" key={idx}>
-              <Link activeClass="text-accent" className="hover:text-accent  capitalize cursor-pointer p-1" to={item.href}>{item.name}</Link>
+              <Link
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-69}
+                activeClass="text-[rgb(172,107,52)]"
+                className="hover:text-accent text-white capitalize cursor-pointer p-1"
+                to={item.href}
+              >
+                {item.name}
+              </Link>
             </li>
           );
         })}
